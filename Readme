@@ -1,1 +1,30 @@
+# 🖼️ Creador de PDF a partir de Múltiples Imágenes (Google Colab)
 
+Este script de Python, diseñado para ejecutarse en **Google Colab**, permite a los usuarios **seleccionar y subir múltiples archivos de imagen** (JPG, PNG, BMP, etc.) y unificarlos en un **único archivo PDF**.
+
+Es ideal para digitalizar documentos o colecciones de fotos rápidamente.
+
+---
+
+## 🚀 Cómo Usar
+
+1.  **Abre** este código en un entorno de Google Colab.
+2.  **Ejecuta** la primera celda (`# ⬇️ Instala libs`) para instalar las librerías necesarias.
+3.  **Ejecuta** la celda principal del script.
+4.  Se te pedirá que **selecciones los archivos**. Haz clic en el botón y **selecciona todas las imágenes** que deseas incluir en el PDF.
+    * *Nota:* Las imágenes se ordenarán automáticamente por nombre de archivo antes de la conversión.
+5.  El script procesará las imágenes, las convertirá al formato adecuado y generará un archivo llamado `imagenes_unidas.pdf`.
+6.  Una vez finalizado, verás un mensaje de confirmación y el archivo **se descargará automáticamente** a tu ordenador.
+
+---
+
+## 📦 Dependencias
+
+El script requiere las siguientes librerías de Python, que se instalan automáticamente al inicio:
+
+* `Pillow` (PIL): Para el manejo y conversión de imágenes.
+* `img2pdf`: Para realizar la conversión final de las imágenes a un PDF unificado.
+* `pypdf`: Para la validación final del archivo PDF generado.
+
+```python
+!pip install --quiet Pillow img2pdf pypdf
